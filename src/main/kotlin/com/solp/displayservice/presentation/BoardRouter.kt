@@ -13,7 +13,7 @@ class BoardRouter(
     @Bean
     fun coBoardRouter(): RouterFunction<ServerResponse> {
         return coRouter {
-            ("/display/boards").nest {
+            ("/boards").nest {
                 GET("", handler::getBoards)
             }
         }
